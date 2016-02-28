@@ -71,36 +71,7 @@ class resultados: UIViewController ,UITextFieldDelegate{
         let tupla = (te, te2)
         return tupla
     }
-     /*
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
-        let vistaResultados = segue.destinationViewController as! Ingredientes
-        vistaResultados.tamañoPizza = tamañoPizza
-        vistaResultados.tipoMasa = tipoMasa
-        vistaResultados.tipoQueso = tipoQueso
-
-       
-        let vistaResultados2 = segue.destinationViewController as! TipoQueso
-        vistaResultados2.tamañoPizza = tamañoPizza
-        vistaResultados2.tipoMasa = tipoMasa
-        vistaResultados2.ingredientes = ingredientes
-        
-        let vistaResultados3 = segue.destinationViewController as! TipoMasa
-        vistaResultados3.tamañoPizza = tamañoPizza
-        vistaResultados3.tipoQueso = tipoQueso
-        vistaResultados3.ingredientes = ingredientes
-        
-        let vistaResultados4 = segue.destinationViewController as! ViewController
-        vistaResultados4.tipoMasa = tipoMasa
-        vistaResultados4.tipoQueso = tipoQueso
-        vistaResultados4.ingredientes = ingredientes
-
-
-        
-//3144342499
-    }
-    
-*/
+   
     /*
     // MARK: - Navigation
 
