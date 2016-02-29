@@ -10,18 +10,27 @@ import UIKit
 
 class TipoQueso: UIViewController,UIPickerViewDelegate,UITextFieldDelegate {
 
+    @IBOutlet weak var fondo: UIImageView!
+    
+    @IBOutlet weak var boton: UIButton!
+    
     let quesos: [String] = ["- - - -","mozarela", "cheddar", "parmesano", "sin queso"]
     
     var resultadoTipoQueso : String = ""
     var tamañoPizza :String = ""
     var tipoMasa :String = ""
-    var ingredientes : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         resultadoTipoQueso = quesos[0]
+        boton.layer.cornerRadius = 10
+        boton.layer.masksToBounds = true
+        boton.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.7)
+        
+        
+        fondo.image = UIImage(named: "fondo.png")
     }
 
     override func didReceiveMemoryWarning() {

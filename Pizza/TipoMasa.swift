@@ -12,16 +12,25 @@ class TipoMasa: UIViewController,UIPickerViewDelegate,UITextFieldDelegate {
 
     let masas: [String] = ["- - - -","delgada", "crujiente", "gruesa"]
     
+    @IBOutlet weak var fondo: UIImageView!
+    
+    @IBOutlet weak var boton: UIButton!
+    @IBOutlet var ss: UIView!
+    
     var resultadoTipoMasa : String = ""
     var tamañoPizza :String = ""
-    var tipoQueso :String = ""
-    var ingredientes : String = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         resultadoTipoMasa = masas[0]
+        boton.layer.cornerRadius = 10
+        boton.layer.masksToBounds = true
+        boton.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.7)
+        
+        
+        fondo.image = UIImage(named: "fondo.png")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

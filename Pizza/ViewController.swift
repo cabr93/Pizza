@@ -12,10 +12,13 @@ class ViewController: UIViewController,UIPickerViewDelegate,UITextFieldDelegate 
     
     let arr: [String] = ["- - - -","chica","mediana","grande"]
     
+
+    @IBOutlet weak var fondo: UIImageView!
+    @IBOutlet weak var boton: UIButton!
+    @IBOutlet weak var picker: UIPickerView!
+    @IBOutlet weak var titulo: UILabel!
+    
     var resultadoTamañoPizza : String = ""
-    var tipoQueso :String = ""
-    var ingredientes : String = ""
-    var tipoMasa :String = ""
 
     
     override func viewDidLoad() {
@@ -23,6 +26,12 @@ class ViewController: UIViewController,UIPickerViewDelegate,UITextFieldDelegate 
         
         // Do any additional setup after loading the view, typically from a nib.
         resultadoTamañoPizza = arr[0]
+        boton.layer.cornerRadius = 10
+        boton.layer.masksToBounds = true
+        boton.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.7)
+        
+
+        fondo.image = UIImage(named: "fondo.png")
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,11 +50,12 @@ class ViewController: UIViewController,UIPickerViewDelegate,UITextFieldDelegate 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         resultadoTamañoPizza = arr[row]
     }
-    
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vistaResultados = segue.destinationViewController as! TipoMasa
         vistaResultados.tamañoPizza = resultadoTamañoPizza
     }
+    
 
 }
 

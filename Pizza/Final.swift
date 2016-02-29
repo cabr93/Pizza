@@ -14,6 +14,8 @@ class final: UIViewController {
     var mensajeResulB :String = ""
     @IBOutlet weak var resul: UILabel!
     @IBOutlet weak var resulB: UIButton!
+    @IBOutlet weak var fondo: UIImageView!
+    @IBOutlet weak var boton: UIButton!
     
     override func viewWillAppear(animated: Bool) {
         resul.text = String(mensajeResul)
@@ -23,6 +25,12 @@ class final: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        boton.layer.cornerRadius = 10
+        boton.layer.masksToBounds = true
+        boton.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.7)
+        
+        
+        fondo.image = UIImage(named: "fondo.png")
     }
 
     override func didReceiveMemoryWarning() {
