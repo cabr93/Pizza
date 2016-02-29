@@ -108,9 +108,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-vd-ru4">
-                                <rect key="frame" x="258" y="380" width="84" height="36"/>
+                                <rect key="frame" x="248" y="380" width="105" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Siguiente"/>
+                                <state key="normal" title="  Siguiente  ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="lnr-f6-Tko" kind="show" id="fkp-QR-Pmp"/>
                                 </connections>
@@ -172,9 +174,11 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bb-p8-ggY">
-                                <rect key="frame" x="258" y="380" width="84" height="36"/>
+                                <rect key="frame" x="248" y="380" width="105" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Siguiente"/>
+                                <state key="normal" title="  Siguiente  ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="4dZ-vQ-PfS" kind="show" id="fxH-T4-TmT"/>
                                 </connections>
@@ -241,9 +245,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIJ-BV-gpK">
-                                <rect key="frame" x="258" y="439" width="84" height="36"/>
+                                <rect key="frame" x="248" y="439" width="105" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Siguiente"/>
+                                <state key="normal" title="  Siguiente  ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="vnP-52-1fk" kind="show" id="y5R-Yh-jEt"/>
                                 </connections>
@@ -749,9 +755,11 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohO-9V-Kqf">
-                                <rect key="frame" x="220" y="217" width="160" height="34"/>
+                                <rect key="frame" x="211" y="217" width="179" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="su pedido resultado"/>
+                                <state key="normal" title="  su pedido resultado  ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="XXt-H3-k4A" kind="show" id="p7f-eS-SWU"/>
                                 </connections>
@@ -776,6 +784,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="boton" destination="ohO-9V-Kqf" id="Svj-fc-XLz"/>
+                        <outlet property="fondo" destination="XdD-kd-HKf" id="cmK-Nk-W1H"/>
                         <outlet property="resul" destination="YX7-gN-HR8" id="pnC-eT-G0s"/>
                         <outlet property="resulB" destination="ohO-9V-Kqf" id="vET-qw-dbc"/>
                     </connections>
@@ -807,6 +817,6 @@
         <image name="B1.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3bv-3t-9Ki"/>
+        <segue reference="p7f-eS-SWU"/>
     </inferredMetricsTieBreakers>
 </document>

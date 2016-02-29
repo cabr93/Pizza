@@ -17,6 +17,7 @@ class final: UIViewController {
     @IBOutlet weak var fondo: UIImageView!
     @IBOutlet weak var boton: UIButton!
     
+    
     override func viewWillAppear(animated: Bool) {
         resul.text = String(mensajeResul)
         resulB.setTitle(String(mensajeResulB), forState: .Normal)
