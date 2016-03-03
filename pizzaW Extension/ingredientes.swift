@@ -28,6 +28,7 @@ class ingredientes: WKInterfaceController {
     @IBOutlet var pimientaS: WKInterfaceSwitch!
     @IBOutlet var piñaS: WKInterfaceSwitch!
     @IBOutlet var anchoaS: WKInterfaceSwitch!
+    @IBOutlet var boton: WKInterfaceButton!
     
     
     override func awakeWithContext(context: AnyObject?) {
@@ -38,6 +39,7 @@ class ingredientes: WKInterfaceController {
         tamaño = c.tamaño
         masa = c.masa
         queso  = c.queso
+        boton.setEnabled(false)
     }
     
     @IBAction func jamon(value: Bool) {
@@ -81,7 +83,9 @@ class ingredientes: WKInterfaceController {
         
         ingredient = resultadoIngredientes[0]
         for var i = 1 ; i < resultadoIngredientes.count ; i++ {
-            ingredient = ingredient + " \n" + resultadoIngredientes[i]
+            if resultadoIngredientes[i] != ""{
+                ingredient = ingredient + " \n" + resultadoIngredientes[i]
+            }
         }
         
         let valorContex = Valor4(tamaño: tamaño, masa: masa, queso: queso, ingredientes: ingredient)
@@ -117,6 +121,12 @@ class ingredientes: WKInterfaceController {
             pimientaS.setEnabled(true)
             piñaS.setEnabled(true)
             anchoaS.setEnabled(true)
+        }
+        if numeroDeBotonoes == 0{
+            boton.setEnabled(false)
+        }
+        else{
+            boton.setEnabled(true)
         }
         
         

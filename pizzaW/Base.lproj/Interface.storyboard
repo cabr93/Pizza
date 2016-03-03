@@ -137,6 +137,7 @@
                     <connections>
                         <outlet property="aceitunaS" destination="zt7-6k-GFc" id="KV0-gb-cRM"/>
                         <outlet property="anchoaS" destination="E8U-Gr-KoC" id="UxF-pb-7tE"/>
+                        <outlet property="boton" destination="e4r-hT-jCp" id="RNS-Ie-u6a"/>
                         <outlet property="cebollaS" destination="Qvc-HB-4n7" id="O1y-WQ-aa5"/>
                         <outlet property="jamonS" destination="hc8-PP-Wnk" id="VQF-GN-kfc"/>
                         <outlet property="pavoS" destination="pcS-FW-LbF" id="Sfk-fL-1au"/>
