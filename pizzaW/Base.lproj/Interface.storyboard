@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="pizzaW" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="Tamaño" textAlignment="center" id="cxr-ND-Ldh"/>
+                        <picker height="100" alignment="left" id="3qJ-vY-apS">
+                            <connections>
+                                <action selector="tamañoP:" destination="AgC-eL-Hgc" id="dhE-rV-21r"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="3GU-PZ-xvG">
+                            <connections>
+                                <action selector="siguiente" destination="AgC-eL-Hgc" id="YEZ-1N-NHe"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tamaño" destination="3qJ-vY-apS" id="6Ld-tN-oOd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="255" y="349"/>
+        </scene>
+        <!--TipoMasa-->
+        <scene sceneID="x7u-yf-dNw">
+            <objects>
+                <controller identifier="TipoMasa" id="Ur1-lo-EqE" customClass="tipoMasa" customModule="pizzaW_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="tipo de masa" textAlignment="center" id="v12-Z4-oOJ"/>
+                        <picker height="100" alignment="left" id="pZG-Ta-Mh6">
+                            <connections>
+                                <action selector="tipoMasa:" destination="Ur1-lo-EqE" id="JJO-nn-r3N"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="beq-An-yOm">
+                            <connections>
+                                <action selector="Siguiente" destination="Ur1-lo-EqE" id="0K5-3G-lEj"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tipoMasa" destination="pZG-Ta-Mh6" id="mJw-SS-QTL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="464" y="349"/>
+        </scene>
+        <!--TipoQueso-->
+        <scene sceneID="DWY-2Y-5Sr">
+            <objects>
+                <controller identifier="TipoQueso" id="Uhl-22-p9f" customClass="tipoQueso" customModule="pizzaW_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="tipo de queso" textAlignment="center" id="85D-VJ-9Tn"/>
+                        <picker height="100" alignment="left" id="yW3-eI-d5U">
+                            <connections>
+                                <action selector="tipoQueso:" destination="Uhl-22-p9f" id="K1c-6a-iOX"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="LC6-cq-qRi">
+                            <connections>
+                                <action selector="siguiente" destination="Uhl-22-p9f" id="fRF-OW-MqH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tipoQueso" destination="yW3-eI-d5U" id="ZgH-b0-eff"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="671" y="349"/>
+        </scene>
+        <!--Ingredientes-->
+        <scene sceneID="6D4-9p-OBu">
+            <objects>
+                <controller identifier="Ingredientes" id="HaG-CJ-JN6" customClass="ingredientes" customModule="pizzaW_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Ingredientes" textAlignment="center" id="H6R-5M-n47"/>
+                        <switch width="1" alignment="left" title="jamón" id="hc8-PP-Wnk">
+                            <connections>
+                                <action selector="jamon:" destination="HaG-CJ-JN6" id="Sls-mD-ldG"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="pepperoni" id="T3v-u4-z8m">
+                            <connections>
+                                <action selector="peperoni:" destination="HaG-CJ-JN6" id="ZcZ-hq-R8O"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="pavo" id="pcS-FW-LbF">
+                            <connections>
+                                <action selector="pavo:" destination="HaG-CJ-JN6" id="18x-DJ-gQT"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="salchicha" id="ehA-zL-j23">
+                            <connections>
+                                <action selector="salchicha:" destination="HaG-CJ-JN6" id="cuJ-ci-s2K"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="aceituna" id="zt7-6k-GFc">
+                            <connections>
+                                <action selector="aceituna:" destination="HaG-CJ-JN6" id="xDK-ie-2Rj"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="cebolla" id="Qvc-HB-4n7">
+                            <connections>
+                                <action selector="cebolla:" destination="HaG-CJ-JN6" id="bJc-eT-YH8"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="pimiento" id="VvG-g0-CDZ">
+                            <connections>
+                                <action selector="pimienta:" destination="HaG-CJ-JN6" id="yWJ-7S-QMF"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="piña" id="7jG-rE-Kv7">
+                            <connections>
+                                <action selector="piña:" destination="HaG-CJ-JN6" id="fjF-mf-Aw0"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="anchoa" id="E8U-Gr-KoC">
+                            <connections>
+                                <action selector="anchoa:" destination="HaG-CJ-JN6" id="q9o-CK-LUt"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Siguiente" id="e4r-hT-jCp">
+                            <connections>
+                                <action selector="siguiente" destination="HaG-CJ-JN6" id="SMr-ng-iNy"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="aceitunaS" destination="zt7-6k-GFc" id="KV0-gb-cRM"/>
+                        <outlet property="anchoaS" destination="E8U-Gr-KoC" id="UxF-pb-7tE"/>
+                        <outlet property="cebollaS" destination="Qvc-HB-4n7" id="O1y-WQ-aa5"/>
+                        <outlet property="jamonS" destination="hc8-PP-Wnk" id="VQF-GN-kfc"/>
+                        <outlet property="pavoS" destination="pcS-FW-LbF" id="Sfk-fL-1au"/>
+                        <outlet property="pepperoniS" destination="T3v-u4-z8m" id="GCe-D7-T54"/>
+                        <outlet property="pimientaS" destination="VvG-g0-CDZ" id="7UQ-Dg-Xlv"/>
+                        <outlet property="piñaS" destination="7jG-rE-Kv7" id="KuF-ne-Mcq"/>
+                        <outlet property="slachichaS" destination="ehA-zL-j23" id="r2q-ej-ppE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="897" y="344"/>
+        </scene>
+        <!--Resultado-->
+        <scene sceneID="9Ca-ER-vmn">
+            <objects>
+                <controller identifier="Resultado" id="IwC-jg-fnE" customClass="resultado" customModule="pizzaW_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="29W-bh-TFZ">
+                            <items>
+                                <label alignment="left" text="Tamaño:" id="R5l-3c-DIF"/>
+                                <label height="19.5" alignment="left" text="11" id="5fV-Kj-rSw"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="jPv-OP-H44">
+                            <items>
+                                <label alignment="left" text="Masa:" id="QCd-Fr-xr0"/>
+                                <label alignment="left" text="22" id="NaL-MH-fJl"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="jNY-zQ-CPU">
+                            <items>
+                                <label alignment="left" text="Queso:" id="rp3-IU-AGo"/>
+                                <label alignment="left" text="33" id="fvJ-8G-UyR"/>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Ingredientes" textAlignment="center" id="pXZ-Xl-He5"/>
+                        <label width="136" alignment="left" text="Label" textAlignment="center" numberOfLines="5" id="KZe-vF-ILy"/>
+                        <button width="1" alignment="left" title="Cambiar orden" id="hSI-5Y-NOP">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="aoy-2E-lPs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Confirmar orden" id="Vbo-5d-GKh">
+                            <connections>
+                                <segue destination="1G8-Kr-DoJ" kind="push" id="Rr7-PU-xOX"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ingredientes" destination="KZe-vF-ILy" id="itC-KA-HNp"/>
+                        <outlet property="textoTamaño" destination="5fV-Kj-rSw" id="RpO-S1-vvQ"/>
+                        <outlet property="tipiMasaTexto" destination="NaL-MH-fJl" id="5wH-lK-rJW"/>
+                        <outlet property="tipoQuesoTexto" destination="fvJ-8G-UyR" id="EhT-WF-9VS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="671" y="618.75"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="C1C-0r-H18">
+            <objects>
+                <controller id="1G8-Kr-DoJ">
+                    <items>
+                        <label width="136" alignment="left" text="Su pedido ya se realizo" textAlignment="center" numberOfLines="0" id="Qd2-7B-RnT"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="897" y="752"/>
+        </scene>
+    </scenes>
+</document>
